@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+    #reader { width: 100%; max-width: 400px; margin: auto; }
+    #info {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      font-family: monospace;
+    }
