@@ -1,1 +1,1 @@
-Este projeto é uma aplicação web simples que permite escanear QR Codes usando a câmera do dispositivo e consultar informações de computadores e mesas com base em um arquivo specs.json.
+Este projeto é uma aplicação web simples que desenvolvi durante meu estágio, com o apoio do meu supervisor. A aplicação permite escanear QR Codes utilizando a câmera do dispositivo e consultar informações sobre computadores e mesas, com base nos dados contidos em um arquivo specs.json.
