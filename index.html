@@ -1,81 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Leitor de QR e busca no specs.json</title>
+  <title>Inventário - Leitor QR</title>
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h2>Escaneie o QR</h2>
+  <h2>Escaneie o QR Code</h2>
   <div id="reader"></div>
   <div id="info">Aguardando leitura...</div>
+  <button id="scan-again" style="display: none;">Escanear novamente</button>
 
-  <script>
-    const infoDiv = document.getElementById("info");
-
-    function mostrarInformacoesDoPC(pcId) {
-      fetch('specs.json')
-        .then(res => res.json())
-        .then(data => {
-          const pc = data[pcId];
-          if (pc) {
-            infoDiv.textContent = `
-Nome: ${pc.nome}
-Processador: ${pc.processador}
-RAM: ${pc.ram}
-Armazenamento: ${pc.armazenamento}
-            `;
-          } else {
-            infoDiv.textContent = "ID não encontrado no specs.json.";
-          }
-        })
-        .catch(err => {
-          infoDiv.textContent = "Erro ao carregar specs.json: " + err;
-        });
-    }
-    
-    function mostrarInformacoesDaMesa(mesaId) {
-      fetch('specs.json')
-        .then(res => res.json())
-        .then(data => {
-          const pc = data[mesaId];
-          if (pc) {
-            infoDiv.textContent = `
-Modelo do Computador: ${pc.computador}
-Patrimônio: ${pc.patrimonio_pc}
-Modelo do Monitor: ${pc.monitor}
-Patrimônio: ${pc.patrimonio_mon}
-Modelo do Telefone: ${pc.telefone}
-Patrimônio: ${pc.patrimonio_tel}
-            `;
-          } else {
-            infoDiv.textContent = "ID não encontrado no specs.json.";
-          }
-        })
-        .catch(err => {
-          infoDiv.textContent = "Erro ao carregar specs.json: " + err;
-        });
-    }
-
-    const html5QrCode = new Html5Qrcode("reader");
-
-    html5QrCode.start(
-      { facingMode: "environment" },
-      { fps: 10, qrbox: 250 },
-      (decodedText) => {
-        html5QrCode.stop(); // Para leitura após o primeiro QR
-        mostrarInformacoesDoPC(decodedText.trim()); // Ex: "computador01"
-        mostrarInformacoesDaMesa(decodedText.trim());
-      },
-      (errorMessage) => {
-        // Ignora erros
-      }
-    ).catch(err => {
-      infoDiv.textContent = "Erro ao iniciar câmera: " + err;
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
