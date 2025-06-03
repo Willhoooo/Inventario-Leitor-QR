@@ -1,34 +1,26 @@
 {
     "computador01": { 
-        "nome":"Nome: CRMN3436563",
-        "processador":"Processador: Intel(R) Core(TM) i5-7500",
-        "ram":"RAM: 8GB",
+        "nome":"CRMN3436563",
+        "processador":"Intel(R) Core(TM) i5-7500",
+        "ram":"8GB",
         "armazenamento":"HD: 476GB"
     },
     "computador02": { 
-        "nome":"Nome: CRMN3436560",
-        "processador":"Processador: Intel(R) Core(TM) i5-7500",
-        "ram":"RAM: 8GB",
+        "nome":"CRMN3436560",
+        "processador":"Intel(R) Core(TM) i5-7500",
+        "ram":"8GB",
         "armazenamento":"HD: 476GB"
     },
     "computador03": { 
-        "nome":"Nome: CRMN34365551",
-        "processador":"Processador: Intel(R) Core(TM) i5-7500",
-        "ram":"RAM: 8GB",
+        "nome":"CRMN34365551",
+        "processador":"Intel(R) Core(TM) i5-7500",
+        "ram":"8GB",
         "armazenamento":"HD: 476GB"
     },
     "computador04": { 
-        "nome":"Nome: CRMN3436546",
-        "processador":"Processador: Intel(R) Core(TM) i5-7500",
-        "ram":"RAM: 8GB",
+        "nome":"CRMN3436546",
+        "processador":"Intel(R) Core(TM) i5-7500",
+        "ram":"8GB",
         "armazenamento":"HD: 476GB"
-    },
-    "mesa_do_william": {
-      "computador": "Dell OptiPlex 7050",
-      "patrimonio_pc": "3436563",
-      "monitor": "DELL",
-      "patrimonio_mon": "3436440",
-      "telefone": "Alcatel Lucent",
-      "patrimonio_tel": "3435424"
     }
 }
