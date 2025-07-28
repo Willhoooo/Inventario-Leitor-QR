@@ -1,26 +1,8 @@
 {
     "computador01": { 
-        "nome":"CRMN3436563",
-        "processador":"Intel(R) Core(TM) i5-7500",
-        "ram":"8GB",
-        "armazenamento":"HD: 476GB"
-    },
-    "computador02": { 
-        "nome":"CRMN3436560",
-        "processador":"Intel(R) Core(TM) i5-7500",
-        "ram":"8GB",
-        "armazenamento":"HD: 476GB"
-    },
-    "computador03": { 
-        "nome":"CRMN34365551",
-        "processador":"Intel(R) Core(TM) i5-7500",
-        "ram":"8GB",
-        "armazenamento":"HD: 476GB"
-    },
-    "computador04": { 
-        "nome":"CRMN3436546",
-        "processador":"Intel(R) Core(TM) i5-7500",
-        "ram":"8GB",
-        "armazenamento":"HD: 476GB"
+        "nome":"[NOME DO COMPUTADOR]",
+        "processador":"[PROCESSADOR DO COMPUTADOR]",
+        "ram":"[CAPACIDADE DA RAM]",
+        "armazenamento":"[CAPACIDADE E TIPO DE ARMAZENAMENTO]"
     }
 }
